@@ -87,6 +87,7 @@ AboutStack.navigationOptions = {
 // ? Docs: https://reactnavigation.org/docs/en/bottom-tab-navigator.html
 const BottomTabNavigatorConfig = {
   tabBarOptions: {
+    activeTintColor: '#111',
     style: {
       // backgroundColor: '#111',
       borderTopColor: '#eee'
