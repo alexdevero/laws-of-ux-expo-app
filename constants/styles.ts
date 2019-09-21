@@ -5,7 +5,8 @@ export default {
     boxShadow: Colors.boxShadow
   },
   headerTitleStyle: {
-    fontSize: '15px'
+    fontSize: 18,
+    fontWeight: '600'
   },
   viewContainerStyle: {
     flex: 1,
