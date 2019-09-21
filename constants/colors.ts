@@ -9,7 +9,8 @@ export default {
   noticeText: '#fff',
   tabBar: '#fefefe',
   tabIconDefault: '#ccc',
-  tabIconSelected: tintColor,
+  // tabIconSelected: tintColor,
+  tabIconSelected: '#222',
   tintColor,
   warningBackground: '#EAEB5E',
   warningText: '#666804'
