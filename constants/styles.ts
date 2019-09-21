@@ -13,5 +13,11 @@ export default {
     paddingTop: 15,
     paddingHorizontal: 15,
     backgroundColor: '#fff'
+  },
+  lawStyles: {
+    lawHeadingStyles: {},
+    lawSubheadingStyles: {},
+    lawTextStyles: {},
+    lawBackLinkStyles: {}
   }
 }
