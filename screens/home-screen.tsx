@@ -13,9 +13,11 @@ export default function HomeScreen(props) {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.containerInner}>
-        <Text style={styles.headingStyle}>Laws<br />of<br />UX</Text>
+        <Text style={styles.headingStyles}>Laws<br />of<br />UX</Text>
 
-        <Button title="Start learning" onPress={() => props.navigation.navigate('List')} />
+        <View style={styles.buttonContainerStyles}>
+          <Text style={styles.buttonStyles} onPress={() => props.navigation.navigate('List')}>Start learning</Text>
+        </View>
       </View>
     </ScrollView>
   )
@@ -36,9 +38,29 @@ const styles = StyleSheet.create({
     marginTop: '15vh',
     backgroundColor: '#fff'
   },
-  headingStyle: {
+  headingStyles: {
     fontSize: 52,
     fontWeight: 'bold',
     textAlign: 'center'
+  },
+  buttonContainerStyles: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonStyles: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 32,
+    width: '100%',
+    maxWidth: 180,
+    height: 45,
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    color: '#fff',
+    backgroundColor: '#000',
+    borderRadius: 35
   }
 })
