@@ -8,17 +8,17 @@ import {
 
 import Styles from './../constants/styles'
 
-export default function FavoritesScreen() {
-  return(
+export default function ListScreen() {
+  return (
     <ScrollView style={styles.container}>
       <View>
-        <Text>Favorites</Text>
+        <Text>List</Text>
       </View>
     </ScrollView>
   )
 }
 
-FavoritesScreen.navigationOptions = {
+ListScreen.navigationOptions = {
   title: null,
   headerStyle: Styles.headerStyle,
   headerTitleStyle: Styles.headerTitleStyle

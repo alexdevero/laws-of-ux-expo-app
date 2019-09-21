@@ -8,14 +8,15 @@ import {
 import TabBarIcon from '../components/tab-bar-icon'
 
 import HomeScreen from '../screens/home-screen'
-import FavoritesScreen from '../screens/favorites-screen'
+import ListScreen from '../screens/list-screen'
 import AboutScreen from '../screens/about-screen'
 import SettingsScreen from '../screens/settings-screen'
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
 }, {
-  headerLayoutPreset: 'center'
+  headerLayoutPreset: 'center',
+  headerMode: 'none'
 })
 
 HomeStack.navigationOptions = {
@@ -28,18 +29,19 @@ HomeStack.navigationOptions = {
   )
 }
 
-const FavoritesStack = createStackNavigator({
-  Favorites: FavoritesScreen
+const ListStack = createStackNavigator({
+  Favorites: ListScreen
 }, {
-  headerLayoutPreset: 'center'
+  headerLayoutPreset: 'center',
+  headerMode: 'none'
 })
 
-FavoritesStack.navigationOptions = {
-  tabBarLabel: 'Favorites',
+ListStack.navigationOptions = {
+  tabBarLabel: 'List',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
-      name={Platform.OS === 'ios' ? 'ios-star' : 'md-star'}
+      name={Platform.OS === 'ios' ? 'ios-list' : 'md-list'}
     />
   )
 }
@@ -47,7 +49,8 @@ FavoritesStack.navigationOptions = {
 const SettingsStack = createStackNavigator({
   Settings: SettingsScreen
 }, {
-  headerLayoutPreset: 'center'
+  headerLayoutPreset: 'center',
+  headerMode: 'none'
 })
 
 SettingsStack.navigationOptions = {
@@ -63,7 +66,8 @@ SettingsStack.navigationOptions = {
 const AboutStack = createStackNavigator({
   Links: AboutScreen
 }, {
-  headerLayoutPreset: 'center'
+  headerLayoutPreset: 'center',
+  headerMode: 'none'
 })
 
 AboutStack.navigationOptions = {
@@ -91,7 +95,7 @@ const BottomTabNavigatorConfig = {
 
 export default createBottomTabNavigator({
   HomeStack,
-  FavoritesStack,
+  ListStack,
   SettingsStack,
   AboutStack
 }, BottomTabNavigatorConfig)
