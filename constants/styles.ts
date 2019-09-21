@@ -5,8 +5,8 @@ export default {
     boxShadow: Colors.boxShadow
   },
   headerTitleStyle: {
-    fontSize: 18,
-    fontWeight: '600'
+    fontSize: 48,
+    fontWeight: '700'
   },
   viewContainerStyle: {
     flex: 1,
@@ -15,9 +15,28 @@ export default {
     backgroundColor: '#fff'
   },
   lawStyles: {
-    lawHeadingStyles: {},
-    lawSubheadingStyles: {},
-    lawTextStyles: {},
-    lawBackLinkStyles: {}
+    lawPrimaryHeadingStyles: {
+      fontSize: 48,
+      fontWeight: '700'
+    },
+    lawSecondaryHeadingStyles: {
+      marginTop: 21,
+      marginBottom: 8,
+      fontSize: 14,
+      textTransform: 'uppercase'
+    },
+    lawTertiaryHeadingStyles: {
+      fontSize: 28,
+      fontWeight: '700'
+    },
+    lawTextStyles: {
+      fontSize: 21,
+      fontWeight: '500'
+    },
+    lawBackLinkStyles: {
+      marginTop: 21,
+      fontSize: 15,
+      textDecorationLine: 'underline'
+    }
   }
 }
