@@ -14,7 +14,6 @@ export default function HomeScreen(props) {
     <ScrollView style={styles.container}>
       <View style={styles.containerInner}>
         <Text style={styles.headingStyle}>Laws<br />of<br />UX</Text>
-        {console.log(props.navigation)}
 
         <Button title="Start learning" onPress={() => props.navigation.navigate('List')} />
       </View>
