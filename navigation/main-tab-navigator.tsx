@@ -1,16 +1,40 @@
 import React from 'react'
-import { Platform, ImageBackground } from 'react-native'
+import { Platform } from 'react-native'
 import {
   createStackNavigator,
   createBottomTabNavigator
 } from 'react-navigation'
 
+// Import TapBarIcon Component
 import TabBarIcon from '../components/tab-bar-icon'
 
+// Import main screens
 import HomeScreen from '../screens/home-screen'
 import ListScreen from '../screens/list-screen'
 import AboutScreen from '../screens/about-screen'
 import SettingsScreen from '../screens/settings-screen'
+
+// Import laws screens
+import LawOneScreen from './../laws/law-no-01'
+// import LawTwoScreen from './../laws/law-no-02'
+// import LawThreeScreen from './../laws/law-no-03'
+// import LawFourScreen from './../laws/law-no-04'
+// import LawFiveScreen from './../laws/law-no-05'
+// import LawSixScreen from './../laws/law-no-06'
+// import LawSevenScreen from './../laws/law-no-07'
+// import LawEightScreen from './../laws/law-no-08'
+// import LawNineScreen from './../laws/law-no-09'
+// import LawTenScreen from './../laws/law-no-10'
+// import LawElevenScreen from './../laws/law-no-11'
+// import LawTwelveScreen from './../laws/law-no-12'
+// import LawThirteenScreen from './../laws/law-no-13'
+// import LawFourteenScreen from './../laws/law-no-14'
+// import LawFifteenScreen from './../laws/law-no-15'
+// import LawSixteenScreen from './../laws/law-no-16'
+// import LawSeventeenScreen from './../laws/law-no-17'
+// import LawEighteenScreen from './../laws/law-no-18'
+// import LawNineteenScreen from './../laws/law-no-19'
+// import LawTwentyScreen from './../laws/law-no-20'
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen
@@ -30,7 +54,29 @@ HomeStack.navigationOptions = {
 }
 
 const ListStack = createStackNavigator({
-  List: ListScreen
+  List: { screen: ListScreen },
+  // Add Laws list "sub pages"
+  LawOne: { screen: LawOneScreen },
+  // LawOne: { screen: LawOneScreen },
+  // LawTwo: { screen: LawTwoScreen },
+  // LawThree: { screen: LawThreeScreen },
+  // LawFour: { screen: LawFourScreen },
+  // LawFive: { screen: LawFiveScreen },
+  // LawSix: { screen: LawSixScreen },
+  // LawSeven: { screen: LawSevenScreen },
+  // LawEight: { screen: LawEightScreen },
+  // LawNine: { screen: LawNineScreen },
+  // LawTen: { screen: LawTenScreen },
+  // LawEleven: { screen: LawElevenScreen },
+  // LawTwelve: { screen: LawTwelveScreen },
+  // LawThirteen: { screen: LawThirteenScreen },
+  // LawFourteen: { screen: LawFourteenScreen },
+  // LawFifteen: { screen: LawFifteenScreen },
+  // LawSixteen: { screen: LawSixteenScreen },
+  // LawSeventeen: { screen: LawSeventeenScreen },
+  // LawEighteen: { screen: LawEighteenScreen },
+  // LawNineteen: { screen: LawNineteenScreen },
+  // LawTwenty: { screen: LawTwentyScree }n
 }, {
   headerLayoutPreset: 'center',
   headerMode: 'none'
