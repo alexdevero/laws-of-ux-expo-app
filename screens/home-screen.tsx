@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff'
   },
   headingStyles: {
-    fontSize: 52,
+    fontSize: 78,
     fontWeight: 'bold',
     textAlign: 'center'
   },
