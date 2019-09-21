@@ -12,12 +12,12 @@ export default function ListScreen(props) {
   return (
     <ScrollView style={styles.container}>
       <View>
-        <Text style={Styles.headerTitleStyle}>List</Text>
+        <Text style={[Styles.headerTitleStyle, styles.lawHeaderStyles]}>List of UX laws</Text>
       </View>
 
       <View>
         <Text
-          style={styles.lawLinkStyles}
+          style={[styles.lawLinkStyles, styles.lawLinkFirstStyles]}
           onPress={() => props.navigation.navigate('LawOne')}
         >Law no.01: Aesthetic Usability Effect</Text>
 
@@ -128,5 +128,20 @@ ListScreen.navigationOptions = {
 
 const styles = StyleSheet.create({
   container: Styles.viewContainerStyle,
-  lawLinkStyles: {}
+  lawHeaderStyles: {
+    marginBottom: 18,
+    textDecorationLine: 'underline'
+  },
+  lawLinkStyles: {
+    paddingTop: 15,
+    paddingBottom: 18,
+    fontSize: 21,
+    fontWeight: '500',
+    borderTopColor: 'rgba(0, 0, 0, .15)',
+    borderTopStyle: 'solid',
+    borderTopWidth: 1
+  },
+  lawLinkFirstStyles: {
+    borderTopWidth: 0
+  }
 })
