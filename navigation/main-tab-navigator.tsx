@@ -1,5 +1,5 @@
 import React from 'react'
-import { Platform } from 'react-native'
+import { Platform, ImageBackground } from 'react-native'
 import {
   createStackNavigator,
   createBottomTabNavigator
@@ -30,7 +30,7 @@ HomeStack.navigationOptions = {
 }
 
 const ListStack = createStackNavigator({
-  Favorites: ListScreen
+  List: ListScreen
 }, {
   headerLayoutPreset: 'center',
   headerMode: 'none'
@@ -64,7 +64,7 @@ SettingsStack.navigationOptions = {
 }
 
 const AboutStack = createStackNavigator({
-  Links: AboutScreen
+  About: AboutScreen
 }, {
   headerLayoutPreset: 'center',
   headerMode: 'none'
@@ -88,6 +88,7 @@ AboutStack.navigationOptions = {
 const BottomTabNavigatorConfig = {
   tabBarOptions: {
     style: {
+      // backgroundColor: '#111',
       borderTopColor: '#eee'
     }
   }
