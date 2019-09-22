@@ -22,9 +22,11 @@ export default {
       fontSize: 48,
       fontWeight: '700'
     },
-    lawSecondaryHeadingStyles: {
+    lawSecondaryHeadingContainerStyles: {
       marginTop: 21,
       marginBottom: 8,
+    },
+    lawSecondaryHeadingStyles: {
       fontSize: 14,
       textTransform: 'uppercase'
     },
@@ -35,10 +37,12 @@ export default {
     lawTextStyles: {
       fontSize: 21,
       fontWeight: '500',
-      lineHeight: '166%'
+      lineHeight: 38
+    },
+    lawBackLinkContainerStyles: {
+      marginTop: 21,
     },
     lawBackLinkStyles: {
-      marginTop: 21,
       fontSize: 15,
       textDecorationLine: 'underline',
       textTransform: 'uppercase'
