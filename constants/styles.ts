@@ -15,6 +15,9 @@ export default {
     backgroundColor: '#fff'
   },
   lawStyles: {
+    lawContainerStyles: {
+      paddingBottom: 32,
+    },
     lawPrimaryHeadingStyles: {
       fontSize: 48,
       fontWeight: '700'
@@ -31,12 +34,14 @@ export default {
     },
     lawTextStyles: {
       fontSize: 21,
-      fontWeight: '500'
+      fontWeight: '500',
+      lineHeight: '166%'
     },
     lawBackLinkStyles: {
       marginTop: 21,
       fontSize: 15,
-      textDecorationLine: 'underline'
+      textDecorationLine: 'underline',
+      textTransform: 'uppercase'
     }
   }
 }
