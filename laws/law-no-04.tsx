@@ -13,7 +13,7 @@ export default function LawOneScreen(props) {
     <ScrollView style={[Styles.viewContainerStyle, styles.lawContainerStyles]}>
       <View>
         <View style={styles.lawSecondaryHeadingContainerStyles}>
-          <Text style={styles.lawTertiaryHeadingStyles}>Law no.3:</Text>
+          <Text style={styles.lawTertiaryHeadingStyles}>Law no.4:</Text>
         </View>
 
         <Text style={styles.lawPrimaryHeadingStyles}>Fitts's Law</Text>
