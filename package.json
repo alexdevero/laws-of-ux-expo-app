@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/react": "^16.9.5",
     "@types/react-dom": "^16.9.1",
-    "@types/react-native": "^0.60.15",
+    "@types/react-native": "^0.60.18",
     "@typescript-eslint/eslint-plugin": "^2.3.2",
     "@typescript-eslint/parser": "^2.3.2",
     "babel-preset-expo": "^5.2.0",
