@@ -14,7 +14,7 @@ import SettingsScreen from '../screens/settings-screen'
 
 // Import laws screens
 import LawOneScreen from './../laws/law-no-01'
-// import LawTwoScreen from './../laws/law-no-02'
+import LawTwoScreen from './../laws/law-no-02'
 // import LawThreeScreen from './../laws/law-no-03'
 // import LawFourScreen from './../laws/law-no-04'
 // import LawFiveScreen from './../laws/law-no-05'
@@ -55,8 +55,7 @@ const ListStack = createStackNavigator({
   List: { screen: ListScreen },
   // Add Laws list "sub pages"
   LawOne: { screen: LawOneScreen },
-  // LawOne: { screen: LawOneScreen },
-  // LawTwo: { screen: LawTwoScreen },
+  LawTwo: { screen: LawTwoScreen },
   // LawThree: { screen: LawThreeScreen },
   // LawFour: { screen: LawFourScreen },
   // LawFive: { screen: LawFiveScreen },
